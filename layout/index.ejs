@@ -11,6 +11,10 @@
         <% if (link == 'mail') { %>
           <a class="icon" target="_blank" rel="noopener" href="<%- theme.social_links[link] %>">
             <i class="fas fa-envelope"></i><!--
+      ---></a>
+      <% } if (link == 'university') { %>
+      <a class="icon" target="_blank" rel="noopener" href="<%- theme.social_links[link] %>">
+            <i class="fas fa-university"></i><!--
       ---></a><!--
       ---><% } else { %>
           <a class="icon" target="_blank" rel="noopener" href="<%- url_for(theme.social_links[link]) %>">

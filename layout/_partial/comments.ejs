@@ -5,3 +5,17 @@
         </div>
     </div>
 <% } %>
+
+<% if(page.comments && theme.utterances.enabled){ %>
+    <div class="blog-post-comments">
+        <noscript><%= __('comments.no_js') %></noscript>
+        <script src="https://utteranc.es/client.js"
+                repo="alexpnt/alexpnt.github.io"
+                issue-term="pathname"
+                label="comments"
+                theme="photon-dark"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </div>
+<% } %>
